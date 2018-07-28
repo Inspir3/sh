@@ -2,9 +2,9 @@
 
 # Exemple de configuration avec la crontab
 # Garde que les 5 fichiers les plus récents dans /home/foo/tmp
-#* * * * * /home/foo/bin/rotate.sh /home/foo/tmp 5 > /dev/null
+#* * * * * /home/foo/bin/adm/rotate.sh /home/foo/tmp 5 supprime > /dev/null
 
-pwd=`pwd`
+pwd=`dirname "$0"`
 
 . $pwd/../lib/log.sh
 
