@@ -1,7 +1,7 @@
 #!/bin/sh
 
 log_FORMAT="%Y/%m/%d %H:%M:%S"
-log_FILE="/var/log/inspir3.log"
+log_FILE="/var/log/foo.log"
 log_OFF=0
 log_ERREUR=1
 log_WARN=2

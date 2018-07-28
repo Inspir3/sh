@@ -1,8 +1,8 @@
 #!/bin/sh
 
 # Exemple de configuration avec la crontab
-# Garde que les 5 fichiers les plus récents dans /home/redge/tmp
-#* * * * * /home/redge/bin/rotate.sh /home/redge/tmp 5 > /dev/null
+# Garde que les 5 fichiers les plus récents dans /home/foo/tmp
+#* * * * * /home/foo/bin/rotate.sh /home/foo/tmp 5 > /dev/null
 
 pwd=`pwd`
 
@@ -10,7 +10,7 @@ pwd=`pwd`
 
 log_PREFIX="rotate.sh"
 log_NIVEAU=$log_DEBUG
-log_FILE="/var/log/actedev.log"
+log_FILE="/var/log/rotate.log"
 
 dir=$1
 nb=$2
